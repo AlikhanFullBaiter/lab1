@@ -82,8 +82,8 @@ public class Main {
                 System.out.println("Reversed array: " + Arrays.toString(arra));
             case 8:
                 System.out.println("Enter the string");
-                String s = scanner.nextLine();
-                boolean isAllDigits = isAllDigits(s);
+                String string = scanner.nextLine();
+                boolean isAllDigits = isAllDigits(string);
                 System.out.println(isAllDigits);
             case 9:
 
