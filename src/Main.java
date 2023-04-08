@@ -8,6 +8,7 @@ import static src.Fibonacci.findFibonacci;
 import static src.findAverage.findAverageValue;
 import static src.findMin.findMinFromArr;
 import static src.findPrimeNumber.isPrime;
+import static src.isDigit.isAllDigits;
 import static src.powerOfNumber.power;
 import static src.reversedArray.reverseArray;
 
@@ -79,6 +80,13 @@ public class Main {
                 }
                 reverseArray(arra, 0, arra.length - 1);
                 System.out.println("Reversed array: " + Arrays.toString(arra));
+            case 8:
+                System.out.println("Enter the string");
+                String s = scanner.nextLine();
+                boolean isAllDigits = isAllDigits(s);
+                System.out.println(isAllDigits);
+            case 9:
+
         }
     }
 }
