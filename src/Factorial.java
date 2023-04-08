@@ -1,19 +1,20 @@
+package src;
+
 import java.util.Scanner;
 
-public class Fibonacci {
+public class Factorial {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        System.out.println(findFibonacci(n));
+        int fact = factorial(n);
+        System.out.println(fact);
     }
 
-    public static int findFibonacci(int n) {
+    public static int factorial(int n) {
         if (n == 0) {
-            return 0;
-        } else if (n == 1) {
             return 1;
         } else {
-            return findFibonacci(n - 1) + findFibonacci(n - 2);
+            return n * factorial(n - 1);
         }
     }
 }
