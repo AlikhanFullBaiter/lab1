@@ -1,5 +1,6 @@
 package src;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 import static src.Factorial.factorial;
@@ -8,6 +9,7 @@ import static src.findAverage.findAverageValue;
 import static src.findMin.findMinFromArr;
 import static src.findPrimeNumber.isPrime;
 import static src.powerOfNumber.power;
+import static src.reversedArray.reverseArray;
 
 public class Main {
     public static void main(String[] args) {
@@ -67,7 +69,16 @@ public class Main {
                 System.out.println("Enter the value of n");
                 int na = scanner.nextInt();
                 System.out.println(power(a , na));
-
+            case 7:
+                System.out.println("Enter the lenght of the array :");
+                int lenght = scanner.nextInt();
+                System.out.println("Enter the array : ");
+                int[] arra = new int[lenght];
+                for(int i = 0; i< lenght; i++) {
+                    arra[i] = scanner.nextInt();
+                }
+                reverseArray(arra, 0, arra.length - 1);
+                System.out.println("Reversed array: " + Arrays.toString(arra));
         }
     }
 }

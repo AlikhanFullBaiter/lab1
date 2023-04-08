@@ -1,7 +1,4 @@
 package src;
-
-import java.util.Scanner;
-
 public class findMin {
 
     public static int findMinFromArr(int[] arr, int n){
