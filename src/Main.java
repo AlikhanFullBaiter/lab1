@@ -9,6 +9,7 @@ import static src.binom.binomialCoefficient;
 import static src.findAverage.findAverageValue;
 import static src.findMin.findMinFromArr;
 import static src.findPrimeNumber.isPrime;
+import static src.gcd.findGcd;
 import static src.isDigit.isAllDigits;
 import static src.powerOfNumber.power;
 import static src.reversedArray.reverseArray;
@@ -101,6 +102,14 @@ public class Main {
                 int k = scanner.nextInt();
                 int c = binomialCoefficient(nn, k);
                 System.out.println("C(" + nn + ", " + k + ") = " + c);
+                break;
+            case 10:
+                System.out.println("Enter the first value");
+                int first = scanner.nextInt();
+                System.out.println("Enter the second value");
+                int second = scanner.nextInt();
+                int gcd = findGcd(first, second);
+                System.out.println(gcd);
                 break;
         }
     }
