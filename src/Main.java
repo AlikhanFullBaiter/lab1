@@ -17,15 +17,15 @@ import static src.reversedArray.reverseArray;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("finding minumum value - 1");
-        System.out.print("finding average value - 2");
-        System.out.print("finding prime or not value - 3");
-        System.out.print("finding factorial - 4");
-        System.out.print("finding Fibonacci value - 5");
-        System.out.print("finding the power - 6");
-        System.out.print("finding reversed array - 7");
-        System.out.print("finding is digit- 8");
-        System.out.print("finding binomial coefficient - 9");
+        System.out.println("finding minumum value - 1");
+        System.out.println("finding average value - 2");
+        System.out.println("finding prime or not value - 3");
+        System.out.println("finding factorial - 4");
+        System.out.println("finding Fibonacci value - 5");
+        System.out.println("finding the power - 6");
+        System.out.println("finding reversed array - 7");
+        System.out.println("finding is digit- 8");
+        System.out.println("finding binomial coefficient - 9");
         System.out.println("finding GCD - 10");
         int choice = scanner.nextInt();
         switch (choice) {
