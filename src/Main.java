@@ -30,6 +30,7 @@ public class Main {
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
+                //FIND MIN VALUE FROM ARRAY
                 System.out.println("Enter the lenght of array : ");
                 int n = scanner.nextInt();
                 int[] array = new int[n];
@@ -41,6 +42,7 @@ public class Main {
                 System.out.println("Minimum is " + min);
                 break;
             case 2:
+                //FIND AVERAGE VALUE FROM ARRAY
                 System.out.println("Enter the lenght of array : ");
                 int l = scanner.nextInt();
                 int[] ar = new int[l];
@@ -52,6 +54,7 @@ public class Main {
                 System.out.println("Average: " + avg);
                 break;
             case 3:
+                //FIND IF THE GIVEN NUMBER IS PRIME
                 System.out.println("Enter the value");
                 int number = scanner.nextInt();
                 if (isPrime(number)) {
@@ -61,17 +64,20 @@ public class Main {
                 }
                 break;
             case 4:
+                //FIND THE FACTORIAL
                 System.out.println("Enter the value");
                 int factor = scanner.nextInt();
                 int fact = factorial(factor);
                 System.out.println(fact);
                 break;
             case 5:
+                //FIND FIBONACCI VALUE
                 System.out.println("Enter the value");
                 int fibo = scanner.nextInt();
                 System.out.println(findFibonacci(fibo));
                 break;
             case 6:
+                //FIND THE POWER OF GIEN NUMBER
                 System.out.println("Enter the value of a");
                 int a = scanner.nextInt();
                 System.out.println("Enter the value of n");
@@ -79,6 +85,7 @@ public class Main {
                 System.out.println(power(a , na));
                 break;
             case 7:
+                //FIND REVERSED ARRAY
                 System.out.println("Enter the lenght of the array :");
                 int lenght = scanner.nextInt();
                 System.out.println("Enter the array : ");
@@ -90,12 +97,14 @@ public class Main {
                 System.out.println("Reversed array: " + Arrays.toString(arra));
                 break;
             case 8:
+                //FIND IF THE GIVEN STRING CONSISTS ONLY OF DIGITS
                 System.out.println("Enter the string");
                 String st = scanner.next();
                 boolean isAllDigits = isAllDigits(st);
                 System.out.println(isAllDigits);
                 break;
             case 9:
+                //FIND BINOMAL COEFFICIENT
                 System.out.println("enter the n");
                 int nn = scanner.nextInt();
                 System.out.println("enter the k");
@@ -104,6 +113,7 @@ public class Main {
                 System.out.println("C(" + nn + ", " + k + ") = " + c);
                 break;
             case 10:
+                //FIND GCD
                 System.out.println("Enter the first value");
                 int first = scanner.nextInt();
                 System.out.println("Enter the second value");
@@ -114,4 +124,3 @@ public class Main {
         }
     }
 }
-
